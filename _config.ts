@@ -4,7 +4,6 @@ import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
-import pageFind from "lume/plugins/pagefind.ts";
 import date from "lume/plugins/date.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import sheets from "lume/plugins/sheets.ts";
@@ -31,15 +30,6 @@ site.use(codeHighlight());
 site.use(date());
 site.use(sitemap());
 site.use(sheets());
-site.use(
-    pageFind({
-        ui: {
-            resetStyles: false,
-            containerId: "search",
-            showImages: false,
-        },
-    })
-);
 
 // static files
 site.copy("assets");
