@@ -1,0 +1,17 @@
+metas:
+  site: =title 
+  description: The Network States statistical office 
+  lang: en
+  generator: true
+
+links:
+  - title: Home
+    href: "/"
+  - title: Dashboard
+    href : "/dashboard"
+  - title: About
+    href: "/about"
+  - title: Twitter 
+    href: "https://twitter.com/networkstatsxyz"
+
+layout: "layouts/base.njk"

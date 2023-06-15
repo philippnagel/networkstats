@@ -1,0 +1,21 @@
+---
+title: "Network States"
+---
+<table class="table-full"><thead><th>Logo</th><th>Name</th><th>Founding Date</th><th>Mission</th><th>Website</th><th>Twitter</th><th>Discord</th><th>amountOfInhabitants</th><th>inhabitantsTracker</th><th>applicationURL</th></thead>
+  <tbody>
+  {% for row in networkstates %}
+    <tr>
+      <td><img class="object-scale-down h-20 w-20 rounded-full ..." src=" {{ row.logoURL  }}"></td>
+      <td>{{ row.name }}</td>
+      <td>{{ row.foundingDate }}</td>
+      <td>{{ row.mission }}</td>
+      <td>{{ row.websiteURL }}</td>
+      <td>{{ row.twitterURL }}</td>
+      <td>{{ row.discordURL }}</td>
+      <td>{{ row.amountOfInhabitants }}</td>
+      <td>{{ row.inhabitantsTracker }}</td>
+      <td>{{ row.applicationURL }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
