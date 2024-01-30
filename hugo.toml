@@ -1,0 +1,23 @@
+baseURL = 'https://networkstats.xyz/'
+languageCode = 'en-us'
+title = 'Networkstats'
+theme = 'lynx'
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[params.author]
+  name = "Networkstats"
+  headline = "Networkstats.xyz is the Network States statistical office"
+  image = "logo.jpg"
+  links = [
+    { link = { href = "https://archive.is/PmBrj", text = "Read the short intro by Balajis Srinivasan" } },
+    { link = { href = "https://networkstats.substack.com/", text = "🛠️ WIP: Get the Network Stats on our Substack" } },
+    { x = "https://twitter.com/networkstatsxyz" },
+    { link = { href = "https://tally.so/r/31d7rW", text = "Get in touch!" } },
+  ]
+
+[markup.highlight]
+  noClasses = false
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
